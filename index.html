@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: grey;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>David Jevtic</h1>
+  <p>Meine <b>eigene</b> von mir erstellte Website.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="#"></a>
+  <a href="#"></a>
+  <a href="#" class="right"></a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Über mich</h2>
+    <img src="https://drive.google.com/thumbnail?id=17iJwXnbbMytto2CMrUleuOee36YBa76i">
+    <p>In meiner Freizeit baue ich sehr gerne mit Lego Technik. Ich mag es, neue Fahrzeuge oder Maschinen zusammenzusetzen, umzugestalten, auszuprobieren, wie sie funktionieren. Hier kann ich viel über Technik lernen, Geduld und genaues Arbeiten. Es macht mir Spass Probleme zu lösen und eigene Ideen umzusetzen. Was ich mir noch wünsche ist ein 3D Drucker wo ich noch spezielle Lego Teilchen selbst erstellen kann.</p>
+    <h3>weitere Interessen in meiner Freizeit</h3>
+    <p>Ich interessiere mich sehr für Autos und bin ein absoluter Formel 1 Fan. Besonders interessiert mich dabei die Motoren, die Schnelligkeit und der technische Aufbau. Ausserdem habe ich Spass am Programmieren. Ich finde es spannend, wie man mit Code Dinge steuern oder automatisieren kann. Das fasziniert mich sehr! Neben meinen technischen Hobbys spiele ich aktiv Tennis im Verein und fahre sehr gerne Ski im Winter.</p>
+    <img src="https://drive.google.com/thumbnail?id=1B-hsmBOXXdR1INLP2DeM_pAJP88L_bdV">
+    <img src="https://drive.google.com/thumbnail?id=1R4AXevf8ii3HiJvy51ERXLa4CWDbEvNF">
+    <img src="https://drive.google.com/thumbnail?id=10PaOSMGycn_QHmrd9EQnRIRui4PeTHQM">
+  </div>
+  <div class="main">
+    <h2>Weshalb ich mich für diesen Beruf bewerbe?</h2>
+    <h5>Ich durfte in ganz tollen Unternehmen bereits erste Einblicke in technische Berufe gewinnen </h5>
+    <img src="https://drive.google.com/thumbnail?id=1uxmOkCyElRdltOXLqZBpcWdZee8GEIuH">
+     <img src="https://drive.google.com/thumbnail?id=1W_dXIAFFP6K6wH17fgi3nVY1onSunpbY">
+    <p>Ich sehe mich in einem technischen Beruf, weil ich gerne Dinge verstehe, auseinandernehme und wieder zusammensetze. Technik fasziniert mich. Schon früh habe ich angefangen mit Lego Technik Fahrzeuge zu bauen und wollte immer wissen wie Dinge funktionieren. Später kam auch ein grosses Interesse für das Programmieren weil man damit die Technik steuern kann. Durch meine Schnupperlehren konnte ich erste Einblicke in technische Berufe gewinnen. Das hat mich in meinem Wunsch noch mehr bestärkt. Ich möchte später in einem Beruf arbeiten, in dem ich mit Technik zu tun habe. </p>
+    <br>
+    <h2>Musik ist auch noch ein Teil von mir</h2>
+    <img src="https://drive.google.com/thumbnail?id=1hbcb97VZY0O3SL_2XKOGqt41KT2e10K2">
+    <p>Früher habe ich lange Zeit Keyboard gespielt. Auch wenn ich heute nicht mehr regelmässig übe, spiele ich manchmal noch in meiner Freizeit. Ich mag es weiterhin noch sehr.</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
